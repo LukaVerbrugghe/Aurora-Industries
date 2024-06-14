@@ -11,8 +11,11 @@ using Microsoft.VisualBasic;
 
 namespace prjAuroraIndustriesControlPanel
 {
+    
     public partial class frmHome : Form
     {
+        //aantal keer gecanceld
+        int intTimesCancelled = 0;
         public frmHome()
         {
             InitializeComponent();
@@ -35,6 +38,12 @@ namespace prjAuroraIndustriesControlPanel
             {
                 //do nothing
                 MessageBox.Show("Log in cancelled.");
+                intTimesCancelled++;
+                //check number of times cancelled
+                if (intTimesCancelled >= 3)
+                {
+                    MessageBox.Show("Aurora Guardian Protection (AGP) has detected suspicious activity. Your account has been blocked. Please contect the Administrator Help Center. The number can be found in your phone.");
+                }
             }
             else
             {
