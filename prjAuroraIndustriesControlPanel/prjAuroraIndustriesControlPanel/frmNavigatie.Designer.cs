@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnPlanAirStrike = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -62,11 +63,26 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnPlanAirStrike
+            // 
+            this.btnPlanAirStrike.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPlanAirStrike.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnPlanAirStrike.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlanAirStrike.ForeColor = System.Drawing.Color.Crimson;
+            this.btnPlanAirStrike.Location = new System.Drawing.Point(13, 73);
+            this.btnPlanAirStrike.Name = "btnPlanAirStrike";
+            this.btnPlanAirStrike.Size = new System.Drawing.Size(381, 33);
+            this.btnPlanAirStrike.TabIndex = 6;
+            this.btnPlanAirStrike.Text = "Plan an Airstrike";
+            this.btnPlanAirStrike.UseVisualStyleBackColor = false;
+            this.btnPlanAirStrike.Click += new System.EventHandler(this.btnPlanAirStrike_Click);
+            // 
             // frmNavigatie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPlanAirStrike);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
@@ -82,5 +98,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnPlanAirStrike;
     }
 }
