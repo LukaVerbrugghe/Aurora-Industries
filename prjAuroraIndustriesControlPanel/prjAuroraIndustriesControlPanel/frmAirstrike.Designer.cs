@@ -65,7 +65,16 @@
             this.rdbHulluEstar = new System.Windows.Forms.RadioButton();
             this.grbStandardBULL = new System.Windows.Forms.RadioButton();
             this.rdbStandaardAXEL = new System.Windows.Forms.RadioButton();
-            this.grbProperties = new System.Windows.Forms.GroupBox();
+            this.chbPrioity1 = new System.Windows.Forms.CheckBox();
+            this.chbSafeLaunch = new System.Windows.Forms.CheckBox();
+            this.chbAnnounce = new System.Windows.Forms.CheckBox();
+            this.chbClearSite = new System.Windows.Forms.CheckBox();
+            this.chbInformKAS = new System.Windows.Forms.CheckBox();
+            this.chbClearLaunchSite = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbAutorisedByAI = new System.Windows.Forms.CheckBox();
+            this.chbShutDownSystemAfterLaunch = new System.Windows.Forms.CheckBox();
+            this.grbLaunchSummary = new System.Windows.Forms.GroupBox();
             this.grbAirstrikePlanning.SuspendLayout();
             this.grbKindBomb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbComposition1)).BeginInit();
@@ -80,12 +89,20 @@
             // 
             // grbAirstrikePlanning
             // 
-            this.grbAirstrikePlanning.Controls.Add(this.grbProperties);
+            this.grbAirstrikePlanning.Controls.Add(this.checkBox1);
+            this.grbAirstrikePlanning.Controls.Add(this.chbClearLaunchSite);
+            this.grbAirstrikePlanning.Controls.Add(this.chbInformKAS);
             this.grbAirstrikePlanning.Controls.Add(this.cmbOostWest);
+            this.grbAirstrikePlanning.Controls.Add(this.chbShutDownSystemAfterLaunch);
+            this.grbAirstrikePlanning.Controls.Add(this.chbAutorisedByAI);
+            this.grbAirstrikePlanning.Controls.Add(this.chbClearSite);
             this.grbAirstrikePlanning.Controls.Add(this.label9);
             this.grbAirstrikePlanning.Controls.Add(this.cmbNoordZuid);
+            this.grbAirstrikePlanning.Controls.Add(this.chbAnnounce);
             this.grbAirstrikePlanning.Controls.Add(this.label8);
+            this.grbAirstrikePlanning.Controls.Add(this.chbSafeLaunch);
             this.grbAirstrikePlanning.Controls.Add(this.label6);
+            this.grbAirstrikePlanning.Controls.Add(this.chbPrioity1);
             this.grbAirstrikePlanning.Controls.Add(this.label7);
             this.grbAirstrikePlanning.Controls.Add(this.label5);
             this.grbAirstrikePlanning.Controls.Add(this.label4);
@@ -102,7 +119,7 @@
             this.grbAirstrikePlanning.Controls.Add(this.dateTimePicker1);
             this.grbAirstrikePlanning.Location = new System.Drawing.Point(12, 12);
             this.grbAirstrikePlanning.Name = "grbAirstrikePlanning";
-            this.grbAirstrikePlanning.Size = new System.Drawing.Size(513, 426);
+            this.grbAirstrikePlanning.Size = new System.Drawing.Size(513, 340);
             this.grbAirstrikePlanning.TabIndex = 1;
             this.grbAirstrikePlanning.TabStop = false;
             this.grbAirstrikePlanning.Text = "Variables";
@@ -253,9 +270,7 @@
             // grbKindBomb
             // 
             this.grbKindBomb.Controls.Add(this.chbOnlyLocal);
-            this.grbKindBomb.Controls.Add(this.label1);
             this.grbKindBomb.Controls.Add(this.chbIncludePrototype);
-            this.grbKindBomb.Controls.Add(this.trbComposition1);
             this.grbKindBomb.Controls.Add(this.chbDistortLaunchSignal);
             this.grbKindBomb.Controls.Add(this.chbLongDistance);
             this.grbKindBomb.Controls.Add(this.chbIncludeImperialLogo);
@@ -269,6 +284,8 @@
             this.grbKindBomb.Controls.Add(this.rdbHulluEstar);
             this.grbKindBomb.Controls.Add(this.grbStandardBULL);
             this.grbKindBomb.Controls.Add(this.rdbStandaardAXEL);
+            this.grbKindBomb.Controls.Add(this.label1);
+            this.grbKindBomb.Controls.Add(this.trbComposition1);
             this.grbKindBomb.Location = new System.Drawing.Point(6, 46);
             this.grbKindBomb.Name = "grbKindBomb";
             this.grbKindBomb.Size = new System.Drawing.Size(501, 193);
@@ -452,20 +469,111 @@
             this.rdbStandaardAXEL.Text = "Standard AXEL";
             this.rdbStandaardAXEL.UseVisualStyleBackColor = true;
             // 
-            // grbProperties
+            // chbPrioity1
             // 
-            this.grbProperties.Location = new System.Drawing.Point(6, 269);
-            this.grbProperties.Name = "grbProperties";
-            this.grbProperties.Size = new System.Drawing.Size(501, 151);
-            this.grbProperties.TabIndex = 10;
-            this.grbProperties.TabStop = false;
-            this.grbProperties.Text = "Properties";
+            this.chbPrioity1.AutoSize = true;
+            this.chbPrioity1.Location = new System.Drawing.Point(13, 269);
+            this.chbPrioity1.Name = "chbPrioity1";
+            this.chbPrioity1.Size = new System.Drawing.Size(66, 17);
+            this.chbPrioity1.TabIndex = 1;
+            this.chbPrioity1.Text = "Priority 1";
+            this.chbPrioity1.UseVisualStyleBackColor = true;
+            // 
+            // chbSafeLaunch
+            // 
+            this.chbSafeLaunch.AutoSize = true;
+            this.chbSafeLaunch.Location = new System.Drawing.Point(13, 291);
+            this.chbSafeLaunch.Name = "chbSafeLaunch";
+            this.chbSafeLaunch.Size = new System.Drawing.Size(83, 17);
+            this.chbSafeLaunch.TabIndex = 1;
+            this.chbSafeLaunch.Text = "Safe launch";
+            this.chbSafeLaunch.UseVisualStyleBackColor = true;
+            // 
+            // chbAnnounce
+            // 
+            this.chbAnnounce.AutoSize = true;
+            this.chbAnnounce.Location = new System.Drawing.Point(13, 314);
+            this.chbAnnounce.Name = "chbAnnounce";
+            this.chbAnnounce.Size = new System.Drawing.Size(75, 17);
+            this.chbAnnounce.TabIndex = 1;
+            this.chbAnnounce.Text = "Announce";
+            this.chbAnnounce.UseVisualStyleBackColor = true;
+            // 
+            // chbClearSite
+            // 
+            this.chbClearSite.AutoSize = true;
+            this.chbClearSite.Location = new System.Drawing.Point(302, 269);
+            this.chbClearSite.Name = "chbClearSite";
+            this.chbClearSite.Size = new System.Drawing.Size(69, 17);
+            this.chbClearSite.TabIndex = 1;
+            this.chbClearSite.Text = "Clear site";
+            this.chbClearSite.UseVisualStyleBackColor = true;
+            // 
+            // chbInformKAS
+            // 
+            this.chbInformKAS.AutoSize = true;
+            this.chbInformKAS.Location = new System.Drawing.Point(145, 269);
+            this.chbInformKAS.Name = "chbInformKAS";
+            this.chbInformKAS.Size = new System.Drawing.Size(75, 17);
+            this.chbInformKAS.TabIndex = 1;
+            this.chbInformKAS.Text = "Inform IAS";
+            this.chbInformKAS.UseVisualStyleBackColor = true;
+            // 
+            // chbClearLaunchSite
+            // 
+            this.chbClearLaunchSite.AutoSize = true;
+            this.chbClearLaunchSite.Location = new System.Drawing.Point(145, 292);
+            this.chbClearLaunchSite.Name = "chbClearLaunchSite";
+            this.chbClearLaunchSite.Size = new System.Drawing.Size(104, 17);
+            this.chbClearLaunchSite.TabIndex = 1;
+            this.chbClearLaunchSite.Text = "Clear launch site";
+            this.chbClearLaunchSite.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(145, 315);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(104, 17);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "Clear launch site";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // chbAutorisedByAI
+            // 
+            this.chbAutorisedByAI.AutoSize = true;
+            this.chbAutorisedByAI.Location = new System.Drawing.Point(302, 291);
+            this.chbAutorisedByAI.Name = "chbAutorisedByAI";
+            this.chbAutorisedByAI.Size = new System.Drawing.Size(172, 17);
+            this.chbAutorisedByAI.TabIndex = 1;
+            this.chbAutorisedByAI.Text = "Authorised by Aurora Industries";
+            this.chbAutorisedByAI.UseVisualStyleBackColor = true;
+            // 
+            // chbShutDownSystemAfterLaunch
+            // 
+            this.chbShutDownSystemAfterLaunch.AutoSize = true;
+            this.chbShutDownSystemAfterLaunch.Location = new System.Drawing.Point(302, 314);
+            this.chbShutDownSystemAfterLaunch.Name = "chbShutDownSystemAfterLaunch";
+            this.chbShutDownSystemAfterLaunch.Size = new System.Drawing.Size(176, 17);
+            this.chbShutDownSystemAfterLaunch.TabIndex = 1;
+            this.chbShutDownSystemAfterLaunch.Text = "Shut down systems after launch";
+            this.chbShutDownSystemAfterLaunch.UseVisualStyleBackColor = true;
+            // 
+            // grbLaunchSummary
+            // 
+            this.grbLaunchSummary.Location = new System.Drawing.Point(531, 18);
+            this.grbLaunchSummary.Name = "grbLaunchSummary";
+            this.grbLaunchSummary.Size = new System.Drawing.Size(257, 424);
+            this.grbLaunchSummary.TabIndex = 2;
+            this.grbLaunchSummary.TabStop = false;
+            this.grbLaunchSummary.Text = "Launch Summary";
             // 
             // frmAirstrike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 454);
+            this.Controls.Add(this.grbLaunchSummary);
             this.Controls.Add(this.grbAirstrikePlanning);
             this.Name = "frmAirstrike";
             this.Text = "Airstrike planner";
@@ -517,6 +625,15 @@
         private System.Windows.Forms.TextBox txtHeightMinute;
         private System.Windows.Forms.TextBox txtWidthSeconds;
         private System.Windows.Forms.TextBox txtHeightDegree;
-        private System.Windows.Forms.GroupBox grbProperties;
+        private System.Windows.Forms.CheckBox chbInformKAS;
+        private System.Windows.Forms.CheckBox chbClearSite;
+        private System.Windows.Forms.CheckBox chbAnnounce;
+        private System.Windows.Forms.CheckBox chbSafeLaunch;
+        private System.Windows.Forms.CheckBox chbPrioity1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chbClearLaunchSite;
+        private System.Windows.Forms.CheckBox chbAutorisedByAI;
+        private System.Windows.Forms.CheckBox chbShutDownSystemAfterLaunch;
+        private System.Windows.Forms.GroupBox grbLaunchSummary;
     }
 }
