@@ -30,11 +30,20 @@
         {
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.grbAirstrikePlanning = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbClearLaunchSite = new System.Windows.Forms.CheckBox();
+            this.chbInformKAS = new System.Windows.Forms.CheckBox();
             this.cmbOostWest = new System.Windows.Forms.ComboBox();
+            this.chbShutDownSystemAfterLaunch = new System.Windows.Forms.CheckBox();
+            this.chbAutorisedByAI = new System.Windows.Forms.CheckBox();
+            this.chbClearSite = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbNoordZuid = new System.Windows.Forms.ComboBox();
+            this.chbAnnounce = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.chbSafeLaunch = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.chbPrioity1 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,9 +58,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grbKindBomb = new System.Windows.Forms.GroupBox();
             this.chbOnlyLocal = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.chbIncludePrototype = new System.Windows.Forms.CheckBox();
-            this.trbComposition1 = new System.Windows.Forms.TrackBar();
             this.chbDistortLaunchSignal = new System.Windows.Forms.CheckBox();
             this.chbLongDistance = new System.Windows.Forms.CheckBox();
             this.chbIncludeImperialLogo = new System.Windows.Forms.CheckBox();
@@ -65,15 +72,8 @@
             this.rdbHulluEstar = new System.Windows.Forms.RadioButton();
             this.grbStandardBULL = new System.Windows.Forms.RadioButton();
             this.rdbStandaardAXEL = new System.Windows.Forms.RadioButton();
-            this.chbPrioity1 = new System.Windows.Forms.CheckBox();
-            this.chbSafeLaunch = new System.Windows.Forms.CheckBox();
-            this.chbAnnounce = new System.Windows.Forms.CheckBox();
-            this.chbClearSite = new System.Windows.Forms.CheckBox();
-            this.chbInformKAS = new System.Windows.Forms.CheckBox();
-            this.chbClearLaunchSite = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.chbAutorisedByAI = new System.Windows.Forms.CheckBox();
-            this.chbShutDownSystemAfterLaunch = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.trbComposition1 = new System.Windows.Forms.TrackBar();
             this.grbLaunchSummary = new System.Windows.Forms.GroupBox();
             this.grbAirstrikePlanning.SuspendLayout();
             this.grbKindBomb.SuspendLayout();
@@ -124,6 +124,36 @@
             this.grbAirstrikePlanning.TabStop = false;
             this.grbAirstrikePlanning.Text = "Variables";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(145, 315);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(104, 17);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "Clear launch site";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // chbClearLaunchSite
+            // 
+            this.chbClearLaunchSite.AutoSize = true;
+            this.chbClearLaunchSite.Location = new System.Drawing.Point(145, 292);
+            this.chbClearLaunchSite.Name = "chbClearLaunchSite";
+            this.chbClearLaunchSite.Size = new System.Drawing.Size(104, 17);
+            this.chbClearLaunchSite.TabIndex = 1;
+            this.chbClearLaunchSite.Text = "Clear launch site";
+            this.chbClearLaunchSite.UseVisualStyleBackColor = true;
+            // 
+            // chbInformKAS
+            // 
+            this.chbInformKAS.AutoSize = true;
+            this.chbInformKAS.Location = new System.Drawing.Point(145, 269);
+            this.chbInformKAS.Name = "chbInformKAS";
+            this.chbInformKAS.Size = new System.Drawing.Size(75, 17);
+            this.chbInformKAS.TabIndex = 1;
+            this.chbInformKAS.Text = "Inform IAS";
+            this.chbInformKAS.UseVisualStyleBackColor = true;
+            // 
             // cmbOostWest
             // 
             this.cmbOostWest.FormattingEnabled = true;
@@ -134,6 +164,36 @@
             this.cmbOostWest.Name = "cmbOostWest";
             this.cmbOostWest.Size = new System.Drawing.Size(46, 21);
             this.cmbOostWest.TabIndex = 9;
+            // 
+            // chbShutDownSystemAfterLaunch
+            // 
+            this.chbShutDownSystemAfterLaunch.AutoSize = true;
+            this.chbShutDownSystemAfterLaunch.Location = new System.Drawing.Point(302, 314);
+            this.chbShutDownSystemAfterLaunch.Name = "chbShutDownSystemAfterLaunch";
+            this.chbShutDownSystemAfterLaunch.Size = new System.Drawing.Size(176, 17);
+            this.chbShutDownSystemAfterLaunch.TabIndex = 1;
+            this.chbShutDownSystemAfterLaunch.Text = "Shut down systems after launch";
+            this.chbShutDownSystemAfterLaunch.UseVisualStyleBackColor = true;
+            // 
+            // chbAutorisedByAI
+            // 
+            this.chbAutorisedByAI.AutoSize = true;
+            this.chbAutorisedByAI.Location = new System.Drawing.Point(302, 291);
+            this.chbAutorisedByAI.Name = "chbAutorisedByAI";
+            this.chbAutorisedByAI.Size = new System.Drawing.Size(172, 17);
+            this.chbAutorisedByAI.TabIndex = 1;
+            this.chbAutorisedByAI.Text = "Authorised by Aurora Industries";
+            this.chbAutorisedByAI.UseVisualStyleBackColor = true;
+            // 
+            // chbClearSite
+            // 
+            this.chbClearSite.AutoSize = true;
+            this.chbClearSite.Location = new System.Drawing.Point(302, 269);
+            this.chbClearSite.Name = "chbClearSite";
+            this.chbClearSite.Size = new System.Drawing.Size(69, 17);
+            this.chbClearSite.TabIndex = 1;
+            this.chbClearSite.Text = "Clear site";
+            this.chbClearSite.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -155,6 +215,16 @@
             this.cmbNoordZuid.Size = new System.Drawing.Size(46, 21);
             this.cmbNoordZuid.TabIndex = 9;
             // 
+            // chbAnnounce
+            // 
+            this.chbAnnounce.AutoSize = true;
+            this.chbAnnounce.Location = new System.Drawing.Point(13, 314);
+            this.chbAnnounce.Name = "chbAnnounce";
+            this.chbAnnounce.Size = new System.Drawing.Size(75, 17);
+            this.chbAnnounce.TabIndex = 1;
+            this.chbAnnounce.Text = "Announce";
+            this.chbAnnounce.UseVisualStyleBackColor = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -164,6 +234,16 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "\'";
             // 
+            // chbSafeLaunch
+            // 
+            this.chbSafeLaunch.AutoSize = true;
+            this.chbSafeLaunch.Location = new System.Drawing.Point(13, 291);
+            this.chbSafeLaunch.Name = "chbSafeLaunch";
+            this.chbSafeLaunch.Size = new System.Drawing.Size(83, 17);
+            this.chbSafeLaunch.TabIndex = 1;
+            this.chbSafeLaunch.Text = "Safe launch";
+            this.chbSafeLaunch.UseVisualStyleBackColor = true;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -172,6 +252,16 @@
             this.label6.Size = new System.Drawing.Size(11, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "\'\'";
+            // 
+            // chbPrioity1
+            // 
+            this.chbPrioity1.AutoSize = true;
+            this.chbPrioity1.Location = new System.Drawing.Point(13, 269);
+            this.chbPrioity1.Name = "chbPrioity1";
+            this.chbPrioity1.Size = new System.Drawing.Size(66, 17);
+            this.chbPrioity1.TabIndex = 1;
+            this.chbPrioity1.Text = "Priority 1";
+            this.chbPrioity1.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -288,7 +378,7 @@
             this.grbKindBomb.Controls.Add(this.trbComposition1);
             this.grbKindBomb.Location = new System.Drawing.Point(6, 46);
             this.grbKindBomb.Name = "grbKindBomb";
-            this.grbKindBomb.Size = new System.Drawing.Size(501, 193);
+            this.grbKindBomb.Size = new System.Drawing.Size(501, 190);
             this.grbKindBomb.TabIndex = 3;
             this.grbKindBomb.TabStop = false;
             this.grbKindBomb.Text = "Bombs";
@@ -303,15 +393,6 @@
             this.chbOnlyLocal.Text = "Only local bombs";
             this.chbOnlyLocal.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Number of bombs:";
-            // 
             // chbIncludePrototype
             // 
             this.chbIncludePrototype.AutoSize = true;
@@ -321,13 +402,6 @@
             this.chbIncludePrototype.TabIndex = 1;
             this.chbIncludePrototype.Text = "Include prototypes";
             this.chbIncludePrototype.UseVisualStyleBackColor = true;
-            // 
-            // trbComposition1
-            // 
-            this.trbComposition1.Location = new System.Drawing.Point(96, 135);
-            this.trbComposition1.Name = "trbComposition1";
-            this.trbComposition1.Size = new System.Drawing.Size(399, 45);
-            this.trbComposition1.TabIndex = 1;
             // 
             // chbDistortLaunchSignal
             // 
@@ -469,95 +543,21 @@
             this.rdbStandaardAXEL.Text = "Standard AXEL";
             this.rdbStandaardAXEL.UseVisualStyleBackColor = true;
             // 
-            // chbPrioity1
+            // label1
             // 
-            this.chbPrioity1.AutoSize = true;
-            this.chbPrioity1.Location = new System.Drawing.Point(13, 269);
-            this.chbPrioity1.Name = "chbPrioity1";
-            this.chbPrioity1.Size = new System.Drawing.Size(66, 17);
-            this.chbPrioity1.TabIndex = 1;
-            this.chbPrioity1.Text = "Priority 1";
-            this.chbPrioity1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Number of bombs:";
             // 
-            // chbSafeLaunch
+            // trbComposition1
             // 
-            this.chbSafeLaunch.AutoSize = true;
-            this.chbSafeLaunch.Location = new System.Drawing.Point(13, 291);
-            this.chbSafeLaunch.Name = "chbSafeLaunch";
-            this.chbSafeLaunch.Size = new System.Drawing.Size(83, 17);
-            this.chbSafeLaunch.TabIndex = 1;
-            this.chbSafeLaunch.Text = "Safe launch";
-            this.chbSafeLaunch.UseVisualStyleBackColor = true;
-            // 
-            // chbAnnounce
-            // 
-            this.chbAnnounce.AutoSize = true;
-            this.chbAnnounce.Location = new System.Drawing.Point(13, 314);
-            this.chbAnnounce.Name = "chbAnnounce";
-            this.chbAnnounce.Size = new System.Drawing.Size(75, 17);
-            this.chbAnnounce.TabIndex = 1;
-            this.chbAnnounce.Text = "Announce";
-            this.chbAnnounce.UseVisualStyleBackColor = true;
-            // 
-            // chbClearSite
-            // 
-            this.chbClearSite.AutoSize = true;
-            this.chbClearSite.Location = new System.Drawing.Point(302, 269);
-            this.chbClearSite.Name = "chbClearSite";
-            this.chbClearSite.Size = new System.Drawing.Size(69, 17);
-            this.chbClearSite.TabIndex = 1;
-            this.chbClearSite.Text = "Clear site";
-            this.chbClearSite.UseVisualStyleBackColor = true;
-            // 
-            // chbInformKAS
-            // 
-            this.chbInformKAS.AutoSize = true;
-            this.chbInformKAS.Location = new System.Drawing.Point(145, 269);
-            this.chbInformKAS.Name = "chbInformKAS";
-            this.chbInformKAS.Size = new System.Drawing.Size(75, 17);
-            this.chbInformKAS.TabIndex = 1;
-            this.chbInformKAS.Text = "Inform IAS";
-            this.chbInformKAS.UseVisualStyleBackColor = true;
-            // 
-            // chbClearLaunchSite
-            // 
-            this.chbClearLaunchSite.AutoSize = true;
-            this.chbClearLaunchSite.Location = new System.Drawing.Point(145, 292);
-            this.chbClearLaunchSite.Name = "chbClearLaunchSite";
-            this.chbClearLaunchSite.Size = new System.Drawing.Size(104, 17);
-            this.chbClearLaunchSite.TabIndex = 1;
-            this.chbClearLaunchSite.Text = "Clear launch site";
-            this.chbClearLaunchSite.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(145, 315);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Clear launch site";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // chbAutorisedByAI
-            // 
-            this.chbAutorisedByAI.AutoSize = true;
-            this.chbAutorisedByAI.Location = new System.Drawing.Point(302, 291);
-            this.chbAutorisedByAI.Name = "chbAutorisedByAI";
-            this.chbAutorisedByAI.Size = new System.Drawing.Size(172, 17);
-            this.chbAutorisedByAI.TabIndex = 1;
-            this.chbAutorisedByAI.Text = "Authorised by Aurora Industries";
-            this.chbAutorisedByAI.UseVisualStyleBackColor = true;
-            // 
-            // chbShutDownSystemAfterLaunch
-            // 
-            this.chbShutDownSystemAfterLaunch.AutoSize = true;
-            this.chbShutDownSystemAfterLaunch.Location = new System.Drawing.Point(302, 314);
-            this.chbShutDownSystemAfterLaunch.Name = "chbShutDownSystemAfterLaunch";
-            this.chbShutDownSystemAfterLaunch.Size = new System.Drawing.Size(176, 17);
-            this.chbShutDownSystemAfterLaunch.TabIndex = 1;
-            this.chbShutDownSystemAfterLaunch.Text = "Shut down systems after launch";
-            this.chbShutDownSystemAfterLaunch.UseVisualStyleBackColor = true;
+            this.trbComposition1.Location = new System.Drawing.Point(96, 135);
+            this.trbComposition1.Name = "trbComposition1";
+            this.trbComposition1.Size = new System.Drawing.Size(399, 45);
+            this.trbComposition1.TabIndex = 1;
             // 
             // grbLaunchSummary
             // 
