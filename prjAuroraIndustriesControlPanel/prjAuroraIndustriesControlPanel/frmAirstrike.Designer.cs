@@ -561,9 +561,9 @@
             // 
             // grbLaunchSummary
             // 
-            this.grbLaunchSummary.Location = new System.Drawing.Point(531, 18);
+            this.grbLaunchSummary.Location = new System.Drawing.Point(531, 12);
             this.grbLaunchSummary.Name = "grbLaunchSummary";
-            this.grbLaunchSummary.Size = new System.Drawing.Size(257, 424);
+            this.grbLaunchSummary.Size = new System.Drawing.Size(257, 430);
             this.grbLaunchSummary.TabIndex = 2;
             this.grbLaunchSummary.TabStop = false;
             this.grbLaunchSummary.Text = "Launch Summary";
