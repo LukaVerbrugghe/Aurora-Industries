@@ -75,9 +75,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.trbComposition1 = new System.Windows.Forms.TrackBar();
             this.grbLaunchSummary = new System.Windows.Forms.GroupBox();
+            this.lblBomb = new System.Windows.Forms.Label();
+            this.lblLaunchTime = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.grbLaunch = new System.Windows.Forms.GroupBox();
+            this.btnLaunch = new System.Windows.Forms.Button();
+            this.grbAuthorise = new System.Windows.Forms.GroupBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtAuroraIndustriesID = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.grbAirstrikePlanning.SuspendLayout();
             this.grbKindBomb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbComposition1)).BeginInit();
+            this.grbLaunchSummary.SuspendLayout();
+            this.grbLaunch.SuspendLayout();
+            this.grbAuthorise.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -86,6 +99,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(208, 20);
             this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // grbAirstrikePlanning
             // 
@@ -296,6 +310,7 @@
             this.txtTime.Name = "txtTime";
             this.txtTime.Size = new System.Drawing.Size(177, 20);
             this.txtTime.TabIndex = 7;
+            this.txtTime.TextChanged += new System.EventHandler(this.txtTime_TextChanged);
             // 
             // txtHeightSeconds
             // 
@@ -443,6 +458,7 @@
             this.rdbDistortion.TabStop = true;
             this.rdbDistortion.Text = "Distortion";
             this.rdbDistortion.UseVisualStyleBackColor = true;
+            this.rdbDistortion.CheckedChanged += new System.EventHandler(this.rdbDistortion_CheckedChanged);
             // 
             // rdbNuclearRocket
             // 
@@ -454,6 +470,7 @@
             this.rdbNuclearRocket.TabStop = true;
             this.rdbNuclearRocket.Text = "Nuclear Rocket";
             this.rdbNuclearRocket.UseVisualStyleBackColor = true;
+            this.rdbNuclearRocket.CheckedChanged += new System.EventHandler(this.rdbNuclearRocket_CheckedChanged);
             // 
             // rdbARRTA
             // 
@@ -465,6 +482,7 @@
             this.rdbARRTA.TabStop = true;
             this.rdbARRTA.Text = "ARRTA";
             this.rdbARRTA.UseVisualStyleBackColor = true;
+            this.rdbARRTA.CheckedChanged += new System.EventHandler(this.rdbARRTA_CheckedChanged);
             // 
             // rdbAuroraIndustriesAir
             // 
@@ -476,6 +494,7 @@
             this.rdbAuroraIndustriesAir.TabStop = true;
             this.rdbAuroraIndustriesAir.Text = "Aurora Industries Air";
             this.rdbAuroraIndustriesAir.UseVisualStyleBackColor = true;
+            this.rdbAuroraIndustriesAir.CheckedChanged += new System.EventHandler(this.rdbAuroraIndustriesAir_CheckedChanged);
             // 
             // rdbSmokey
             // 
@@ -487,6 +506,7 @@
             this.rdbSmokey.TabStop = true;
             this.rdbSmokey.Text = "Smokey (V23)";
             this.rdbSmokey.UseVisualStyleBackColor = true;
+            this.rdbSmokey.CheckedChanged += new System.EventHandler(this.rdbSmokey_CheckedChanged);
             // 
             // rdbAuroraIndustriesBee
             // 
@@ -498,6 +518,7 @@
             this.rdbAuroraIndustriesBee.TabStop = true;
             this.rdbAuroraIndustriesBee.Text = "Aurora Industries Bee";
             this.rdbAuroraIndustriesBee.UseVisualStyleBackColor = true;
+            this.rdbAuroraIndustriesBee.CheckedChanged += new System.EventHandler(this.rdbAuroraIndustriesBee_CheckedChanged);
             // 
             // rebNonLeathalTeargass
             // 
@@ -509,6 +530,7 @@
             this.rebNonLeathalTeargass.TabStop = true;
             this.rebNonLeathalTeargass.Text = "Non lethal teargass";
             this.rebNonLeathalTeargass.UseVisualStyleBackColor = true;
+            this.rebNonLeathalTeargass.CheckedChanged += new System.EventHandler(this.rebNonLeathalTeargass_CheckedChanged);
             // 
             // rdbHulluEstar
             // 
@@ -520,6 +542,7 @@
             this.rdbHulluEstar.TabStop = true;
             this.rdbHulluEstar.Text = "Hullu E*";
             this.rdbHulluEstar.UseVisualStyleBackColor = true;
+            this.rdbHulluEstar.CheckedChanged += new System.EventHandler(this.rdbHulluEstar_CheckedChanged);
             // 
             // grbStandardBULL
             // 
@@ -531,6 +554,7 @@
             this.grbStandardBULL.TabStop = true;
             this.grbStandardBULL.Text = "Standard BULL";
             this.grbStandardBULL.UseVisualStyleBackColor = true;
+            this.grbStandardBULL.CheckedChanged += new System.EventHandler(this.grbStandardBULL_CheckedChanged);
             // 
             // rdbStandaardAXEL
             // 
@@ -542,6 +566,7 @@
             this.rdbStandaardAXEL.TabStop = true;
             this.rdbStandaardAXEL.Text = "Standard AXEL";
             this.rdbStandaardAXEL.UseVisualStyleBackColor = true;
+            this.rdbStandaardAXEL.CheckedChanged += new System.EventHandler(this.rdbStandaardAXEL_CheckedChanged);
             // 
             // label1
             // 
@@ -561,6 +586,10 @@
             // 
             // grbLaunchSummary
             // 
+            this.grbLaunchSummary.Controls.Add(this.lblBomb);
+            this.grbLaunchSummary.Controls.Add(this.lblLaunchTime);
+            this.grbLaunchSummary.Controls.Add(this.lblDate);
+            this.grbLaunchSummary.Controls.Add(this.grbLaunch);
             this.grbLaunchSummary.Location = new System.Drawing.Point(531, 12);
             this.grbLaunchSummary.Name = "grbLaunchSummary";
             this.grbLaunchSummary.Size = new System.Drawing.Size(257, 430);
@@ -568,11 +597,104 @@
             this.grbLaunchSummary.TabStop = false;
             this.grbLaunchSummary.Text = "Launch Summary";
             // 
+            // lblBomb
+            // 
+            this.lblBomb.AutoSize = true;
+            this.lblBomb.Location = new System.Drawing.Point(6, 71);
+            this.lblBomb.Name = "lblBomb";
+            this.lblBomb.Size = new System.Drawing.Size(81, 13);
+            this.lblBomb.TabIndex = 1;
+            this.lblBomb.Text = "Selected bomb:";
+            // 
+            // lblLaunchTime
+            // 
+            this.lblLaunchTime.AutoSize = true;
+            this.lblLaunchTime.Location = new System.Drawing.Point(7, 46);
+            this.lblLaunchTime.Name = "lblLaunchTime";
+            this.lblLaunchTime.Size = new System.Drawing.Size(68, 13);
+            this.lblLaunchTime.TabIndex = 1;
+            this.lblLaunchTime.Text = "Launch time:";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(7, 19);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(70, 13);
+            this.lblDate.TabIndex = 1;
+            this.lblDate.Text = "Launch date:";
+            // 
+            // grbLaunch
+            // 
+            this.grbLaunch.Controls.Add(this.btnLaunch);
+            this.grbLaunch.Location = new System.Drawing.Point(7, 363);
+            this.grbLaunch.Name = "grbLaunch";
+            this.grbLaunch.Size = new System.Drawing.Size(244, 61);
+            this.grbLaunch.TabIndex = 0;
+            this.grbLaunch.TabStop = false;
+            this.grbLaunch.Text = "Launch";
+            // 
+            // btnLaunch
+            // 
+            this.btnLaunch.ForeColor = System.Drawing.Color.Red;
+            this.btnLaunch.Location = new System.Drawing.Point(6, 16);
+            this.btnLaunch.Name = "btnLaunch";
+            this.btnLaunch.Size = new System.Drawing.Size(232, 39);
+            this.btnLaunch.TabIndex = 0;
+            this.btnLaunch.Text = "LAUNCH";
+            this.btnLaunch.UseVisualStyleBackColor = true;
+            // 
+            // grbAuthorise
+            // 
+            this.grbAuthorise.Controls.Add(this.txtFullName);
+            this.grbAuthorise.Controls.Add(this.txtAuroraIndustriesID);
+            this.grbAuthorise.Controls.Add(this.label11);
+            this.grbAuthorise.Controls.Add(this.label10);
+            this.grbAuthorise.Location = new System.Drawing.Point(12, 358);
+            this.grbAuthorise.Name = "grbAuthorise";
+            this.grbAuthorise.Size = new System.Drawing.Size(513, 84);
+            this.grbAuthorise.TabIndex = 3;
+            this.grbAuthorise.TabStop = false;
+            this.grbAuthorise.Text = "Authorization";
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.Location = new System.Drawing.Point(160, 45);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(347, 20);
+            this.txtFullName.TabIndex = 1;
+            // 
+            // txtAuroraIndustriesID
+            // 
+            this.txtAuroraIndustriesID.Location = new System.Drawing.Point(122, 17);
+            this.txtAuroraIndustriesID.Name = "txtAuroraIndustriesID";
+            this.txtAuroraIndustriesID.Size = new System.Drawing.Size(385, 20);
+            this.txtAuroraIndustriesID.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(13, 48);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(141, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Full name (ex. Alex J. Smith):";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(13, 20);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Aurora Industries ID:";
+            // 
             // frmAirstrike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 454);
+            this.Controls.Add(this.grbAuthorise);
             this.Controls.Add(this.grbLaunchSummary);
             this.Controls.Add(this.grbAirstrikePlanning);
             this.Name = "frmAirstrike";
@@ -582,6 +704,11 @@
             this.grbKindBomb.ResumeLayout(false);
             this.grbKindBomb.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbComposition1)).EndInit();
+            this.grbLaunchSummary.ResumeLayout(false);
+            this.grbLaunchSummary.PerformLayout();
+            this.grbLaunch.ResumeLayout(false);
+            this.grbAuthorise.ResumeLayout(false);
+            this.grbAuthorise.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -635,5 +762,15 @@
         private System.Windows.Forms.CheckBox chbAutorisedByAI;
         private System.Windows.Forms.CheckBox chbShutDownSystemAfterLaunch;
         private System.Windows.Forms.GroupBox grbLaunchSummary;
+        private System.Windows.Forms.GroupBox grbLaunch;
+        private System.Windows.Forms.Button btnLaunch;
+        private System.Windows.Forms.GroupBox grbAuthorise;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtAuroraIndustriesID;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblLaunchTime;
+        private System.Windows.Forms.Label lblBomb;
     }
 }
